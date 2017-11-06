@@ -1,0 +1,158 @@
+body {
+	color: #074d92;
+	background-color: #8EE4AF;
+}
+div.content{
+	margin-left: 20%;
+    padding: 1px 16px;
+    height: 1000px;
+	margin-bottom: 2em;
+}
+h1{
+	font-family:'Bitter';
+	font-size: 2.5em;
+	text-align: center;
+	color: #05386B;
+	line-height: 0.8em;
+	margin-top: 0.5em;
+	margin-bottom: 0.01em;
+	
+}
+h1 ~ section{
+	font-family:'Poppins';
+	font-size: 1.5em;
+	text-align: center;
+	color: #379683;
+	margin-top: 0.01em;
+}
+
+h2{
+	font-family:'Bitter';
+	font-size: 2.2em;
+	text-align: center;
+	color: #05386B;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+}
+h2 + ul{
+	font-family:'Bitter';
+	font-size: 1.3em;
+	text-align: center;
+	list-style-type: none;
+}
+h2 + ul li {
+	display:inline;
+}
+hr {
+	height: 0.1em;
+	float:center;
+	background-color: #05386B;
+    border:none;
+}
+p {
+	font-size: 1.4em;
+	text-align:center;
+	padding-left: 15%;
+	padding-right: 10%;
+}
+
+#navBar {
+	font-family:'Poppins';
+	list-style-type: none;
+    margin: 0;
+	margin-left: 10%;
+	margin-top: 20%;
+	line-height: 2em;
+    padding: 0;
+    width: 10%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+	background-color: #8EE4AF;
+	border: 100px;
+}
+#navbar  > li a{
+	display:block;
+	padding: 8px 16px;
+	text-decoration:none;
+	color: #05386B;
+}
+#profilePic{
+	border-radius:50%;
+	width: 5em;
+	height: 5em;
+	margin-top: 0.2em;
+	border:1px;
+}
+#resumeButton{
+	background: url(../data/resume-icon.png);
+	background-size: 100% 100%;
+	background-color: #8EE4AF;
+	width: 3em;
+	height:3em;
+	border: none;
+	border-radius: 20%;
+}
+#resumeButton:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#resumeIFrame{
+	width: 50vw;
+	height: 60vh;
+	display:none;
+}
+
+img.skillsIcon{
+	margin-top: 1em;
+	margin-right: 1.2em;
+	position: relative;
+	display:inline-block;
+	text-align:center;
+	width: 3em;
+	height: 3em;
+}
+
+@media screen and (min-width: 320px) and (max-width:767px){
+	hr {
+		width: 100%;
+	}
+	#resumeIFrame{
+		width: 80vw;
+		height: 60vh;
+	}
+	#navBar{
+		list-style-type: none;
+		margin: auto;
+		padding: 0;
+		overflow: hidden;
+		position:fixed;
+		top:0;
+		width:100%;
+		height:6%;
+	}
+	#navBar > li {
+		float: left;
+		padding: 1em 1em;
+		text-align: center;
+		color:#05386B;
+		display:inline;
+	}
+	div.content{
+		margin-top:10%;
+		margin-left:0;
+	}
+}
+@media screen and (min-width: 768px){
+	hr {
+		width: 60%;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	hr {
+		width: 50%;
+	}
+	div.content{
+		margin-left: 10%;
+	}
+}

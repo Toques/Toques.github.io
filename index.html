@@ -1,7 +1,60 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<title>Calvin Wong Application Developer</title>
+	<meta name = "author" content = "Calvin L Wong">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" content="css" href="./css/style.css"/>
+	<link href="http://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Poppins:400,600" rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src= "./js/display.js"> </script>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<ul id = "navBar">
+		<li><a href = #home>Home</a></li>
+		<li><a onclick = resumeClick() href = #resumeButton>Resume</a></li>
+		<li><a href = #biography>Biography</a></li>
+		<li><a href = #skills>Skills</a></li>
+		<li><a href = #contact>Contact me</a></li>
+</ul>
+<div class = "content">
+	<h1 id = "home">Calvin Wong</h1>
+	<section>
+		<br><img id = "profilePic" src = "./data/profile-pic.png" alt = "Calvin's face"><br>
+		Computer Science Student, Application Developer
+		<button id = "resumeButton"></button><br>
+		<iframe id = "resumeIFrame" src="https://drive.google.com/file/d/0B144PbHJE6rraDVCSEp1RkU3cDQ/preview" ></iframe>
+	</section>
+
+	<h2 id = "biography" >Biography</h2>
+		<p>Witty guy with a venturesome curiousity and a desire to experience it all. I enjoy puzzles, basketball, and beer.
+		<br>Oh and also, I'm in CS because I hate bio, especially extremely long, drawn out ones that include what my bowel routines are like.
+		</p>
+		
+	<h2>Skills</h2>
+	<hr>
+	<section id = "skills">
+		<img class = "skillsIcon" src = "./data/powershell-icon.png" alt = "Powershell icon" title = "Windows Powershell"> 
+		<img class = "skillsIcon" src = "./data/git-icon.png" alt = "Git icon" title = "Git"> 
+		<img class = "skillsIcon" src = "./data/sql-icon.png" alt = "SQL icon" title = "SQL"> 
+		<img class = "skillsIcon" src = "./data/java-icon.png" alt = "Java icon" title = "Java"> 
+		<img class = "skillsIcon" src = "./data/python-icon.png" alt = "Python icon" title = "Python"> 
+	</section>
+	
+	<h2>Worked With</h2>
+	<hr>
+	<section>
+	<img  src = "./data/ventegra-icon.png" alt = "Ventegra icon" title = "Ventegra Inc."> 
+	</section>
+	
+	<h2> Contact me</h2>
+	<ul id = "contact">
+		<li><a href = "mailto:calvinlw@uci.edu">Email</a></li>
+		<li><a href = "https://github.com/Toques">GitHub</a></li>
+	</ul>
+</div>
 </body>
+
 </html>
