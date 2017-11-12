@@ -114,7 +114,37 @@ img.skillsIcon{
 	height: 3em;
 }
 
-@media screen and (min-width: 320px) and (max-width:767px){
+@media screen and (min-width: 200px) and (max-width: 515px){
+	div.content{
+		margin-top:12em;
+		margin-left:0;
+		position:relative;
+	}
+	hr {
+		width: 100%;
+	}
+	#resumeIFrame{
+		width: 100vw;
+		height: 55vh;
+	}
+	#navBar{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		position:fixed;
+		top:0;
+		width:100%;
+		height:auto;
+	}
+	#navBar > li {
+		display:block;
+		padding: 0.1em 0.1em;
+		text-align: center;
+		color:#05386B;
+	}
+}
+@media screen and (min-width: 516px) and (max-width:767px){
 	hr {
 		width: 100%;
 	}
@@ -130,7 +160,7 @@ img.skillsIcon{
 		overflow: hidden;
 		position:fixed;
 		top:0;
-		width:auto;
+		width:100%;
 		height:auto;
 	}
 	#navBar > li {
@@ -139,6 +169,7 @@ img.skillsIcon{
 		text-align: center;
 		color:#05386B;
 		display:inline;
+		width:15%;
 	}
 	div.content{
 		margin-top:10%;
@@ -147,15 +178,30 @@ img.skillsIcon{
 }
 @media screen and (min-width: 768px){
 	hr {
-		width: 60%;
+		width: 90%;
+	}
+	#navBar{
+		width:auto;
+		font-size: 1.2em;
+	}
+	#resumeIFrame{
+		width: 70vw;
+		height: 60vh;
+	}
+	div.content{
+		margin-left: 22%;
 	}
 }
 
 @media screen and (min-width: 1200px){
 	hr {
-		width: 50%;
+		width: 60%;
 	}
 	div.content{
 		margin-left: 10%;
+	}
+	#resumeIFrame{
+		width: 50vw;
+		height: 80vh;
 	}
 }
