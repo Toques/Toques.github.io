@@ -1,9 +1,10 @@
 body {
 	color: #074d92;
-	background-color: #8EE4AF;
+	background-color: rgba(142, 228, 175, 0.5);
 }
 div.content{
 	margin-left: 20%;
+	font-size:1.3em;
     padding: 1px 16px;
     height: 1000px;
 	margin-bottom: 2em;
@@ -43,11 +44,19 @@ h2 + ul{
 h2 + ul li {
 	display:inline;
 }
+h3 {
+	font-size: 1.5em;
+	text-align:left;
+}
 hr {
-	height: 0.1em;
+	height:0.1em;
 	float:center;
+	color:#05386B;
 	background-color: #05386B;
     border:none;
+	clear:both;
+	display:block;
+	border-style: inset;
 }
 p {
 	font-size: 1.4em;
@@ -56,6 +65,25 @@ p {
 	padding-right: 10%;
 }
 
+section.screenshots{
+	font-size:0.7em;
+	text-align:left;
+	margin-left:20%;
+	margin-right: 20%;
+	margin-bottom:4em;
+	margin-top:1.5em;
+}
+
+pre{
+	font-family:'Poppins';
+	font-size:0.7em;
+	text-align:left;
+	margin-left:20%;
+	margin-right: 20%;
+	margin-bottom:4em;
+	margin-top:1.5em;
+	white-space: pre-wrap;
+}
 #navBar {
 	font-family:'Poppins';
 	list-style-type: none;
@@ -69,7 +97,6 @@ p {
     position: fixed;
     height: 100%;
     overflow: auto;
-	background-color: #8EE4AF;
 	border: 100px;
 	z-index: 100;
 }
@@ -114,6 +141,16 @@ img.skillsIcon{
 	height: 3em;
 }
 
+img.screenshots{
+	width:18em;
+	height: 9em;
+	float:left;
+	margin-right:0.5em;
+}
+img.screenshots:hover{
+	transition: transform .5s;
+	transform: scale(3.5);
+}
 @media screen and (min-width: 200px) and (max-width: 515px){
 	div.content{
 		margin-top:12em;
